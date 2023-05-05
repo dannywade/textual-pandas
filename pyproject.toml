@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "textual-pandas"
+version = "0.1.0"
+description = ""
+authors = ["Danny Wade <danny.wade35@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "textual_pandas"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+textual = "^0.23.0"
+pandas = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
