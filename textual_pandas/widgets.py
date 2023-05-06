@@ -5,9 +5,6 @@ import pandas as pd
 class DataFrameTable(DataTable):
     """Display Pandas dataframe in DataTable widget."""
 
-    def __init__(self):
-        super().__init__()
-
     def add_df(self, df: pd.DataFrame):
         """Add DataFrame data to DataTable."""
         self.df = df
