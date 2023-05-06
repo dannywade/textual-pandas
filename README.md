@@ -4,9 +4,9 @@ A module to display Pandas DataFrames in Textual's DataTable widget.
 
 ## Background
 
-Pandas is a popular Python library for data analysis. One of the core components to Pandas is the DataFrame object. A DataFrame is a two-dimensional data structure that represents data in rows and columns.
+Pandas is a popular Python library for data analysis. One of the core components of Pandas is the DataFrame object. A DataFrame is a two-dimensional data structure that represents data in rows and columns.
 
-Given Pandas DataFrames are tabular in nature, it makes sense to be able to render them in Textual using the DataTable widget.
+Given Pandas DataFrames are tabular in nature, it makes sense to be able to render them in Textual using the DataTable widget. Enter the DataFrameTable widget...
 
 ## Installation
 
@@ -26,7 +26,7 @@ First, you'll need to import the `DataFrameTable` widget.
 from textual_pandas.widgets import DataFrameTable
 ```
 
-After importing the widget, you'll need to yield the `DataFrameTable` widget in your app's `compose()` method (like you would with the DataTable widget). Once you're ready to draw the table with your DataFrame data (most likely `on_mount()`), you'll simply call the `add_df()` method and pass in a DataFrame object.
+After importing the widget, you'll need to yield the `DataFrameTable` widget in your Textual app's `compose()` method (like you would with the DataTable widget). Once you're ready to draw the table with your DataFrame data (most likely `on_mount()`), you'll simply call the `add_df()` method and pass in a Pandas DataFrame.
 
 ```python
 from textual.app import App
@@ -48,13 +48,13 @@ class ClassApp(App):
         table.add_df(df)
 ```
 
-That's it! Now you're DataFrame will display within a DataTable widget!
+That's it! Now your DataFrame will display within a DataTable widget!
 
 ### Updating the DataFrame
 
-If you update your DataFrame and would like to see the updates in your app, then you'll need to use the `update_df` method and pass in your updated DataFrame object.
+If you update your DataFrame, and would like to see the updates in your app, then you'll need to use the `update_df()` method and pass in your updated DataFrame object.
 
-If you only want to update the rendered DataTable (without the need to change the DataFrame), you may also use the `update_cell` and `update_cell_at` methods that are provided by the DataTable widget.
+If you only want to update the rendered DataFrameTable (without the need to change the DataFrame), you may also use the `update_cell()` and `update_cell_at()` methods that are provided by the DataTable widget.
 
 ```python
 df.insert(
