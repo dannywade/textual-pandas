@@ -5,6 +5,14 @@ import pandas as pd
 class DataFrameTable(DataTable):
     """Display Pandas dataframe in DataTable widget."""
 
+
+    DEFAULT_CSS = """
+    DataFrameTable {
+        height: 1fr
+    }
+    """
+
+    
     def add_df(self, df: pd.DataFrame):
         """Add DataFrame data to DataTable."""
         self.df = df
