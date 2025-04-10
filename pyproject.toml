@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "textual-pandas"
 homepage = "https://github.com/dannywade/textual-pandas"
-version = "0.2.2"
+version = "0.2.3"
 description = "A module to build Textual widgets that represent data from the Pandas library"
 authors = ["Dan Wade <danny.wade35@gmail.com>"]
 license = "MIT"
